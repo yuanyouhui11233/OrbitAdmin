@@ -4,7 +4,7 @@ import App from "./App.tsx";
 // tailwind css
 import "./theme/index.css";
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+	<StrictMode>
+		<App />
+	</StrictMode>,
 );

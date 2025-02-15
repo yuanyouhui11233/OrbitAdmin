@@ -1,0 +1,25 @@
+{
+	"typescript.tsdk": "./node_modules/typescript/lib",
+	"editor.tabSize": 2,   // 缩进 2 空格
+
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit", // 自动执行 ESLint 修复
+		"source.fixAll.stylelint": "explicit" // 自动执行 Stylelint 修复
+	},
+	"npm.packageManager": "npm",
+
+  // 保存时自动格式化
+	"editor.formatOnSave": true,
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	}
+}

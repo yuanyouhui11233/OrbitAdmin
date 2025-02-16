@@ -43,6 +43,6 @@
 			"#/*": ["types/*"]
 		}
 	},
-	"include": ["src", "types"],
+	"include": ["src", "types", "types"],
 	"exclude": ["node_modules", "dist"]
 }

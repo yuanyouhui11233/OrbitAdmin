@@ -20,6 +20,7 @@
     "numeral": "^2.0.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router-dom": "^7.2.0",
     "rollup-plugin-visualizer": "^5.14.0",
     "styled-components": "^6.1.15",
     "vite-plugin-svg-icons": "^2.0.1",

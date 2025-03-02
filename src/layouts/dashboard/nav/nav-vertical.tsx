@@ -6,17 +6,23 @@ import {
 } from "@ant-design/icons";
 import { useState } from "react";
 const { Sider } = Layout;
+import { NAV_WIDTH } from "../config";
 const NavVertical = () => {
 	const [collapsed, setCollapsed] = useState(false);
 	return (
 		<Sider
+			width={NAV_WIDTH}
 			trigger={null}
+			theme={"light"}
 			collapsible
 			collapsed={collapsed}
 			className="!fixed left-0 top-0 h-screen z-50"
+			style={{
+				borderRight: "1px dashed rgba(217, 217, 217, 0.6)",
+			}}
 		>
 			<Menu
-				theme="dark"
+				theme="light"
 				mode="inline"
 				defaultSelectedKeys={["1"]}
 				items={[

@@ -36,6 +36,9 @@ const Header = () => {
 					<div>1</div>
 					<div>1</div>
 					<div>1</div>
+					<button className="bg-[#4CAF50] hover:bg-purple" type="button">
+						btn
+					</button>
 				</div>
 			</div>
 		</header>

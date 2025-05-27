@@ -1,2 +1,3 @@
 import Iconify from "./iconify-icon";
-export { Iconify };
+import IconButton from "./icon-button";
+export { Iconify, IconButton };

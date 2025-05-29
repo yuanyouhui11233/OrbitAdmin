@@ -1,11 +1,14 @@
 import { NavLink } from "react-router";
 
-import { Iconify } from "@/components/icon";
+import { Iconify } from "@/components/icon/index";
 
-function Logo() {
+interface LogoProps {
+	size?: number | string;
+}
+function Logo({ size = 50 }: LogoProps) {
 	return (
 		<NavLink to="/">
-			<Iconify />
+			<Iconify icon="material-icon-theme:coala" size={size} />
 		</NavLink>
 	);
 }

@@ -8,7 +8,7 @@ interface LogoProps {
 function Logo({ size = 50 }: LogoProps) {
 	return (
 		<NavLink to="/">
-			<Iconify icon="material-icon-theme:coala" size={size} />
+			<Iconify icon="logos:codersrank-icon" size={size} />
 		</NavLink>
 	);
 }

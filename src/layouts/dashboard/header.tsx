@@ -4,6 +4,7 @@ import { useSettings } from "@/store/settingStore";
 import { HEADER_HEIGHT, OFFSET_HEADER_HEIGHT } from "./config";
 import { IconButton, Iconify } from "@/components/icon/index";
 import Logo from "@/components/logo";
+import SearchBar from "../components/searchBar";
 import { ThemeLayout } from "#/enum";
 const Header = () => {
 	const [drawerOpen, setDrawerOpen] = useState(false);
@@ -32,7 +33,7 @@ const Header = () => {
 					<div className="ml-4 hidden md:block">breadCrumb</div>
 				</div>
 				<div className="flex">
-					{/* searchBar */}
+					<SearchBar />
 					{/* 国际化 local */}
 
 					<IconButton>

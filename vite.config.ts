@@ -1,5 +1,5 @@
 import { defineConfig, loadEnv } from "vite";
-
+import path from "node:path";
 import react from "@vitejs/plugin-react-swc"; // 支持react的热更新、JSX转换
 
 import { visualizer } from "rollup-plugin-visualizer"; // 用于可视化构建的插件，分析打包体积
@@ -17,7 +17,10 @@ export default defineConfig(({ mode }) => {
 		plugins: [
 			react(),
 			tsconfigPaths(),
-			// createSvgIconsPlugin({}),
+			createSvgIconsPlugin({
+				iconDirs: [path.resolve(process.cwd(), "src/assets/icons")],
+				symbolId: "icon-[dir]-[name]",
+			}),
 			isProduction &&
 				visualizer({
 					open: true,
